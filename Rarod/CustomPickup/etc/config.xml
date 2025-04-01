@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <custompickup>
+                <active>1</active>
+                <model>Rarod\CustomPickup\Model\Carrier\CustomPickup</model>
+                <title>Retirado na Loja</title>
+                <name>Retirado na Loja</name>
+                <sallowspecific>0</sallowspecific>
+            </custompickup>
+        </carriers>
+    </default>
+</config>
