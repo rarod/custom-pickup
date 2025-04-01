@@ -1,8 +1,9 @@
 {
-  "name": "rarod/custompickup",
-  "description": "Módulo de entrega Retirado na Loja para Magento 2",
+  "name": "rarod/custom-pickup",
+  "description": "Módulo de entrega 'Retirado na Loja' para Magento 2",
   "require": {
-    "php": "~8.1.0"
+    "php": "~8.1.0",
+    "magento/framework": "^103.0.0"
   },
   "type": "magento2-module",
   "version": "1.0.0",
@@ -17,5 +18,11 @@
     "psr-4": {
       "Rarod\\CustomPickup\\": ""
     }
-  }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/rarod/custom-pickup"
+    }
+  ]
 }
