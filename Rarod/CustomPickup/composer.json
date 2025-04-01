@@ -24,5 +24,7 @@
       "type": "vcs",
       "url": "https://github.com/rarod/custom-pickup"
     }
-  ]
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
