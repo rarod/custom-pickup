@@ -1,35 +1,43 @@
-# Rarod_CustomPickup module
+# Custom Pickup - Módulo Magento 2
 
-<font color='red'>**The following example is a complete README for a module Magento_Default:** </font>
-# Magento_Default module
-The Magento_Default module enables you to add the Configurable Product updates to the existing store campaigns.
+**Descrição**:  
+O módulo **Custom Pickup** oferece aos clientes a opção de retirar seus pedidos diretamente na loja, aprimorando a experiência de entrega no Magento 2.
 
-The Magento_Default module is a part of the staging functionality in Magento EE. The module adds the “Configurations” tab and the configuration wizard to the Schedule Update form of a product. You can change the Configurable Product attributes in campaigns. These updates are shown on the campaign dashboard.
+---
 
-## Installation details
+## Requisitos
 
-The Magento_Default module makes irreversible changes in a database during installation. You cannot disable or uninstall this module.
+- PHP: `~8.1.0`
+- Magento Framework: `^103.0.0`
+- Magento 2.x configurado e funcional
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+---
+## Instalação
 
-## Extensibility
+####
+1. Adicione o módulo ao seu projeto:
+`composer require rarod/custom-pickup`
 
-Extension developers can interact with the Magento_Default module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_Default module.
+2. Ative o modulo no Magento:
+`bin/magento module:enable Rarod_CustomPickup`
 
-### Layouts
 
-The module introduces layout handles in the `view/adminhtml/layout` directory.
+   
+3. Atualize a configuração no banco de dados:
+`bin/magento setup:upgrade`
 
-For more information about a layout in Magento 2, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).
 
-### UI components
+4. Recompile os arquivos:
+`bin/magento setup:di:compile`
 
-You can extend product and category updates using the UI components located in the `view/adminhtml/ui_component` directory.
 
-For information about a UI component in Magento 2, see [Overview of UI components](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html).
+5. Limpe o cache:
+`bin/magento cache:clean`
 
-## Additional information
 
-For information about significant changes in patch releases, see [Release information](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html).
+## Configuração no painel
+- Acesse o Painel Administrativo do Magento.
+- Vá para Admin > Configurações > Métodos de Envio.
+- Ative a opção Retirado na Loja (Custom Pickup).
+- Personalize as opções, como localização da loja e mensagens de instrução ao cliente.
